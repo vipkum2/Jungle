@@ -1,0 +1,17 @@
+{
+  "viewportWidth": 1440,
+  "viewportHeight": 860,
+  "defaultCommandTimeout": 5000,
+  "pageLoadTimeout": 90000,
+  "chromeWebSecurity": false,
+  "experimentalFetchPolyfill": true,
+  "parseSpecialCharSequences": false,
+  "downloadsFolder": "cypress/downloads",
+  "projectId": "3fhr5645",
+  "env": {
+    "baseUrl": "https://jungle.co/"
+  },
+  "cypress/videos": "cypress/videos",
+  "cypress/screenshots": "cypress/screenshots",
+  "video": true
+}

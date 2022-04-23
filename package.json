@@ -1,0 +1,24 @@
+{
+  "name": "junlge-automation-framework",
+  "version": "1.0.0",
+  "description": "Sample project",
+  "main": "index.js",
+  "repository": "http://example.con",
+  "author": "Vipin Kumar",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "dependencies": {
+    "cypress": "9.5.0",
+    "cypress-cucumber-preprocessor": "4.2.0",
+    "cypress-wait-until": "^1.7.2",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.2",
+    "cypress-localstorage-commands": "^1.7.0"
+  }
+}
