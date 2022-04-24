@@ -6,7 +6,7 @@
 # Owner: chaudhary_vipin05@yahoo.com
 ##################################################################
 
-Feature: Junlge Web Simple BDD Test Scenarios 
+Feature: Jungle Web Simple BDD Test Scenarios 
 
     @smoke
     Scenario: A user is able to access the jungle.co website and can see the logo.
