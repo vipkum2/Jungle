@@ -1,8 +1,5 @@
 name: Run Jungle Framework
-on:
-  push:
-   branches:
-      - main
+on: workflow_dispatch
 
 jobs:
   jungle-tests:
