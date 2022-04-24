@@ -14,7 +14,7 @@ Click on "Run workflow" from right pannel like:
 
 See the results here: https://vipkum2.github.io/Jungle/<img width="1792" alt="Screenshot 2022-04-24 at 6 59 20 PM" src="https://user-images.githubusercontent.com/24789691/164978866-d46d8821-71be-4a69-b780-e2c006686845.png">
 
-You can also download the reports: https://github.com/vipkum2/Jungle/actions/runs/2216058969
+You can also download the artifacts reports: https://github.com/vipkum2/Jungle/actions/runs/2216058969
 
 # Prerequisites to run on local machine:
 Clone Jungle Repo: git clone git@github.com:vipkum2/Jungle.git
@@ -55,7 +55,6 @@ You can find json and html report as well in dir: cypress/reports/report.html, c
 
 
 # Note
-I have also added Git Hub Action workflow to execute the tests autometically when anyone is going to push anything.
 
 Reports will publish for each run here: https://vipkum2.github.io/Jungle/
 
