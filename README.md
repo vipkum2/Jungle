@@ -12,6 +12,8 @@ Go to Action tab and select the workflow(Run Jungle Framework): https://github.c
 Click on "Run workflow" from right pannel like:
 <img width="1742" alt="Screenshot 2022-04-24 at 9 16 03 PM" src="https://user-images.githubusercontent.com/24789691/164984671-7b849a4f-73ee-4860-ba89-c4f4e102edab.png">
 
+**PS:** If you are not able to see the "Run workflow" option, then might clone repo and push something. So after that you might get this option.
+
 See the results here: https://vipkum2.github.io/Jungle/<img width="1792" alt="Screenshot 2022-04-24 at 6 59 20 PM" src="https://user-images.githubusercontent.com/24789691/164978866-d46d8821-71be-4a69-b780-e2c006686845.png">
 
 You can also download the artifacts reports: https://github.com/vipkum2/Jungle/actions/runs/2216058969
@@ -23,16 +25,16 @@ Node (v14.16.1) installation: https://nodejs.org/en/download/
 
 asdf installation: OS basis installation guide:  https://asdf-vm.com/#/core-manage-asdf?id=install
 
-yarn installation: asdf install yarn 1.22.17
+yarn installation: **asdf install yarn 1.22.17**
 
 # Installing dependencies
 
-yarn install
+**yarn install**
 
 # Run on local machine:
 #Execute below on terminal from inside jungle folder:
 
-yarn cypress open 
+**yarn cypress open**
 
 #It will open Cypress UI
 <img width="1789" alt="Screenshot 2022-04-24 at 7 04 29 PM" src="https://user-images.githubusercontent.com/24789691/164979066-0c2adca0-dbe8-4e60-81d2-4dcb5a5b51ae.png">
@@ -44,7 +46,7 @@ Now click on feature file and it will start to running the cases with Chrome or 
 
 #We can execute the same on command line as well with below command:
 
-yarn cypress run
+**yarn cypress run**
 
 It will execute all cases in command line and will print the report summary end of file.<img width="1348" alt="Screenshot 2022-04-24 at 7 00 59 PM" src="https://user-images.githubusercontent.com/24789691/164978927-f59b8b4a-5431-4237-beaa-6af39f60b1c7.png">
 <img width="1312" alt="Screenshot 2022-04-24 at 7 01 22 PM" src="https://user-images.githubusercontent.com/24789691/164978940-d27a7cb7-2e91-47e2-a73d-f2b1349e47b2.png">
