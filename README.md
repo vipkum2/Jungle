@@ -33,6 +33,7 @@ yarn install
 #Execute below on terminal from inside jungle folder:
 
 yarn cypress open 
+
 #It will open Cypress UI
 <img width="1789" alt="Screenshot 2022-04-24 at 7 04 29 PM" src="https://user-images.githubusercontent.com/24789691/164979066-0c2adca0-dbe8-4e60-81d2-4dcb5a5b51ae.png">
 
