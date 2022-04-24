@@ -1,3 +1,10 @@
+/***********************************************************
+* This script contains actions doing on home page. 
+* This is part of Page Object Model.
+* Owner: chaudhary_vipin05@yahoo.com
+***********************************************************/
+
+
 import * as homeSel from "./homePageSelectors"
 
 export const checkSignup = () => {
@@ -24,7 +31,6 @@ export const validateSearchBox = () => {
     cy.get(homeSel.searchBox)
     .should('be.visible')  
 }
-
 export const inputString = () => {
     cy.get(homeSel.searchBox)
     .type('test string')
@@ -39,7 +45,6 @@ export const connectWallet = () => {
     cy.get(homeSel.walletButton)
     .should('be.visible')
 }
-
 export const validateCss = () => {
     cy.get(homeSel.walletButton)
     .should(
@@ -47,4 +52,8 @@ export const validateCss = () => {
         "color",
         "rgb(34, 34, 34)"
       );
+}
+
+export const scrollDown = () => {
+    cy.scrollTo('bottom')
 }

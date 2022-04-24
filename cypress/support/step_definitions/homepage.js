@@ -1,8 +1,13 @@
+/***********************************************************
+* This is script contains step definations in for written in feature file.
+* Owner: chaudhary_vipin05@yahoo.com
+***********************************************************/
+
+
 import { Before, Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import "cypress-wait-until";
 import * as homeAct from "./dom/pageActions"
-import * as homeSel from "./dom//homePageSelectors"
-import { symlink } from "fs";
+import * as homeSel from "./dom/homePageSelectors"
 
 
 Given("I am on Homepage", () => {
@@ -50,5 +55,19 @@ When("I click on Resource tab", () => {
 
 Then("I can see {string} questions on home page", (questions) => {
   cy.findByText(questions)
+  .should('be.visible')
+});
+Then("I can scroll down to bottom", () => {
+  homeAct.scrollDown()
+});
+
+And("I can validate the copyright text", () => {
+  cy.get(homeSel.copyrightText)
+  .should('contain.text','Jungle NFT. All rights reserved')
+});
+
+And("I can validate the social list", () => {
+  cy.get(homeSel.socialList)
+  .should('exist')
   .should('be.visible')
 });

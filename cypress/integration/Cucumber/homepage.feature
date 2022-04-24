@@ -1,17 +1,24 @@
-Feature: Homepage Simple Ten BDD Test Scenarios 
+################################################################### 
+# This feature file contains Test scenarion in Gherkin.
+# This is mainly part of BDD framework.
+# Main intended to use it that it uses plain english,
+# So every stockhlolder can understahnd the test scenarios.
+# Owner: chaudhary_vipin05@yahoo.com
+##################################################################
 
+Feature: Junlge Web Simple BDD Test Scenarios 
 
     @smoke
     Scenario: A user is able to access the jungle.co website and can see the logo.
     Given I am on Homepage
     Then I can see company logo on page
     
-    @smoke
+    @smoke @regression
     Scenario: A user is able to access the jungle.co website and see Sign Up option.
     Given I am on Homepage
     Then I can see Sign up option on page
 
-    @smoke
+    @regression
     Scenario: On homepage, validate the banner text.
     Given I am on Homepage
     Then I can see banner Buy, Sell & Create Digital Art
@@ -34,8 +41,8 @@ Feature: Homepage Simple Ten BDD Test Scenarios
     And I see Connect Wallet button is visible
     Then I validate the css of it
 
-    @smoke
-    Scenario Outline: On homepage, validate the Frequently asked questions.
+   @regression
+    Scenario Outline: After click on  Resource Tab, validate the Frequently asked questions.
     Given I am on Homepage
     When I click on Resource tab
     Then I can see "<questions>" questions on home page
@@ -48,23 +55,14 @@ Feature: Homepage Simple Ten BDD Test Scenarios
      | How do I sell an NFT? |
      | What is freezing metadata? |
 
+    @smoke
+    Scenario: On homepage, scroll down to the bottom and validate copyright info.
+    Given I am on Homepage
+    Then I can scroll down to bottom
+    And I can validate the copyright text
 
- 
- 
-
-   # @e2e @smoke
-   # Scenario: I can read data from tabs
-  #  Given I login as a "Katharina_Bernier" on "signin" page
-   # Given I am on "home" page
-   # Then I can see "Public" data from "EVERYONE" tab
-   # Then I can see "Contacts" data from "FRIENDS" tab
-   # Then I can see "Personal" data from "MINE" tab
-
-  #  @smoke @localhost
-   # Scenario: All Basic data are loaded on Notifications page
-   # Given I login as a "Katharina_Bernier" on "signin" page
-   # And I load sample data into the Application
-   # And I click on "Notifications"
-   # Then I can see my Stub content "Jenniferstub User" in proper field
-    #Then I can see my Stub content "Catherinestub User" in proper field
-    
+   @smoke
+    Scenario: On homepage, scroll down to the bottom and validate social list.
+    Given I am on Homepage
+    Then I can scroll down to bottom
+    And I can validate the social list
