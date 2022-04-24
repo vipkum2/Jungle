@@ -11,7 +11,7 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "report:merge": "mochawesome-merge cypress/reports/*.json > index.json",
-    "report:generate": "marge index.json --reportPageTitle index.html --assetsDir ./public/assets --reportDir public"
+    "report:generate": "marge index.json --reportPageTitle index.html --assetsDir ./public/assets --reportDir ./public/assets"
   },
   "dependencies": {
     "cypress": "9.5.0",
