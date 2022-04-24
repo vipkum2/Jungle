@@ -9,12 +9,12 @@ Open the repo on git hub web: https://github.com/vipkum2/Jungle
 
 Go to Action tab and select the workflow(Run Jungle Framework): https://github.com/vipkum2/Jungle/actions/workflows/main.yml
 
-Click on any workflow execution list from right pannel like: https://github.com/vipkum2/Jungle/actions/runs/2215684176
-
-And click on : Re-run All Jobs<img width="1787" alt="Screenshot 2022-04-24 at 6 58 23 PM" src="https://user-images.githubusercontent.com/24789691/164978820-fcc45489-71b1-4b1c-8176-a27d3bc665ab.png">
+Click on "Run workflow" from right pannel like:
+<img width="1742" alt="Screenshot 2022-04-24 at 9 16 03 PM" src="https://user-images.githubusercontent.com/24789691/164984671-7b849a4f-73ee-4860-ba89-c4f4e102edab.png">
 
 See the results here: https://vipkum2.github.io/Jungle/<img width="1792" alt="Screenshot 2022-04-24 at 6 59 20 PM" src="https://user-images.githubusercontent.com/24789691/164978866-d46d8821-71be-4a69-b780-e2c006686845.png">
 
+You can also download the reports: https://github.com/vipkum2/Jungle/actions/runs/2216058969
 
 # Prerequisites to run on local machine:
 Clone Jungle Repo: git clone git@github.com:vipkum2/Jungle.git
@@ -32,7 +32,8 @@ yarn install
 # Run on local machine:
 #Execute below on terminal from inside jungle folder:
 
-yarn cypress open #It will open Cypress UI
+yarn cypress open 
+#It will open Cypress UI
 <img width="1789" alt="Screenshot 2022-04-24 at 7 04 29 PM" src="https://user-images.githubusercontent.com/24789691/164979066-0c2adca0-dbe8-4e60-81d2-4dcb5a5b51ae.png">
 
 
