@@ -23,7 +23,7 @@ Node (v14.16.1) installation: https://nodejs.org/en/download/
 
 asdf installation: OS basis installation guide:  https://asdf-vm.com/#/core-manage-asdf?id=install
 
-yarn installation: asdf install yarn
+yarn installation: asdf install yarn 1.22.17
 
 # Installing dependencies
 
