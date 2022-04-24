@@ -7,7 +7,7 @@ on:
 jobs:
   jungle-tests:
     name: Run jungle Tests
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     container: cypress/browsers:node12.16.2-chrome81-ff75
 
     steps:
