@@ -16,9 +16,6 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Configure Git
-        run: git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/".insteadOf "git@github.com:"
-
       - name: Install Node.js >=16.0.0 and Restore Yarn's Cache
         uses: actions/setup-node@v2
         with:
