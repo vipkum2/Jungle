@@ -13,5 +13,15 @@
   },
   "cypress/videos": "cypress/videos",
   "cypress/screenshots": "cypress/screenshots",
-  "video": true
+  "video": true,
+
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "reportFilename": "report",
+    "overwrite": false,
+    "html": true,
+    "json": true,
+    "charts": true
+  }
 }
