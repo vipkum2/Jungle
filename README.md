@@ -3,7 +3,7 @@ UI Test Framework Setup For Jungle.co. This UI suite contains simple test cases 
 I have used BDD Model to setup this Framework. For that I have used Gherkin(Cucumber) language with Cypress and JavaScript.
 To start follow below steps.
 
-# Run directly from GitHub Actions, no need to clone:
+# Run directly from GitHub Actions:
 
 Open the repo on git hub web: https://github.com/vipkum2/Jungle
 
