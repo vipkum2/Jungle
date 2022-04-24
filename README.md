@@ -27,7 +27,7 @@ Now click on feature file and it will start to running the cases with Chrome or 
 
 yarn cypress run
 
-It will execute all cases in command line and will print the report simmary end of file.
+It will execute all cases in command line and will print the report summary end of file.
 
 You can also find Video of execution in dir: cypress/videos/Cucumber 
 
