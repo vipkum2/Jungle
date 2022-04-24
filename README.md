@@ -56,7 +56,7 @@ You can find json and html report as well in dir: cypress/reports/report.html, c
 
 # Note
 
-Reports will publish for each run here: https://vipkum2.github.io/Jungle/
+Reports will publish for each run here if run by github Action: https://vipkum2.github.io/Jungle/
 
 You can also see the reports by navigate to Actions tab on git hub web.
 
