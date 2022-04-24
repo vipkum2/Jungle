@@ -1,0 +1,52 @@
+name: Run Jungle Framework
+on:
+  push:
+   branches:
+      - main
+
+jobs:
+  jungle-tests:
+    name: Run jungle Tests
+    runs-on: self-hosted
+    container: cypress/browsers:node12.16.2-chrome81-ff75
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Configure Git
+        run: git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/".insteadOf "git@github.com:"
+
+      - name: Install Node.js >=16.0.0 and Restore Yarn's Cache
+        uses: actions/setup-node@v2
+        with:
+          node-version: ">=16.0.0"
+
+      - name: Initializing npm pkg
+        run: npm install
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          headless: true
+          spec: cypress/integration/Cucumber/*
+        continue-on-error: true
+
+      - name: Merge test results into one
+        run: npm run report:merge
+
+      - name: Create Reports dir
+        run: |
+          mkdir -p ./public/assets
+          chmod -R 777 ./public/assets
+      - name: Generate HTML report
+        run: npm run report:generate
+
+      - name: Upload cypress assert_test
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: jungle-artifacts
+          path: ./public/
